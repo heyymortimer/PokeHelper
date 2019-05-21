@@ -43,3 +43,15 @@ button {
 #searchbar {
     margin-top: 2%;
 }
+#typeTable{
+    display:none;
+}
+#statsTable{
+    display:none;
+}
+#imageTable{
+    display:none;
+}
+#namebar{
+    display:none;
+}
