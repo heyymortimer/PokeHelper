@@ -1,1 +1,98 @@
-# PokeHelper
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1, width=device-width">
+                <title>Pokehelper</title>
+                <!-- Boostrap CSS: Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+                    </head>
+    <body>
+        <div class="container">
+            <div class="row header">
+                <!-- 12 i bredd för mobiler, 8 i bred för desktop -->
+                <div class="col-12">Pokehelper</div>
+                <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
+                <div class="col-12" id="main">Main</div>
+                <div class="col-8" id="searchbar">  <input class="form-control" type="text" placeholder="Search" aria-label="Search"> </div>
+            <div class="container">
+                <div class="row" id="namebar">
+                    <div class="col-8" id="name">namn</div>
+                    <div class="col-4"id="pokeID">id</div>
+                </div>
+                <table class="table" id="imageTable">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Normal</th>
+                            <th scope="col">Shiny</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="imageCol"></th>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                </div>
+                <table class="table" id="typeTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col">Type 1</th>
+                            <th scope="col">Type 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="typeValue"></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table" id="statsTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Base stats</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HP</th>
+                            <td id="typeHP"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Attack</th>
+                            <tdid="typeATK"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Defense</th>
+                            <tdid="typeDef"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sp.Attack</th>
+                            <tdid="SpATK"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sp.Defense</th>
+                            <tdid="spDef"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Speed</th>
+                            <tdid="speed"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <div class="row footer">
+                <!-- Kolumnerna har alltid 6 i bredd -->
+                <div class="col-12">Made by EO OEM</div>
+            </div>
+        </div>
+    </body>
+</html>
