@@ -68,4 +68,7 @@ a {
     #home, #favourites {
         padding-top: 3%;
     }
+    footer {
+        font-size: small;
+    }
 }
