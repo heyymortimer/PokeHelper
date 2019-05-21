@@ -1,0 +1,45 @@
+header {
+    background-color: red;
+    color: white;
+    padding: 3%;
+}
+h1 {
+    padding-left: 10%;
+}
+nav {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 1.5%;
+}
+h2 {
+    padding: 1%;
+}
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.row {
+    margin-left: 0;
+}
+button {
+    float: right;
+}
+.btn {
+    padding: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#main {
+    margin: auto;
+    width: 80%;
+}
+#searchbar {
+    margin-top: 2%;
+}

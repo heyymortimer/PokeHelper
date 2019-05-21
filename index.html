@@ -3,31 +3,27 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="initial-scale=1, width=device-width">
-                <title>Pokehelper</title>
-                <!-- Boostrap CSS: Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-                    </head>
+            <title>Pokehelper</title>
+            <!-- Boostrap CSS: Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
     <body>
-        <div class="container">
-            <header class="row col-12">
+        <header class="row col-12">
             <div class="row header">
                 <!-- 12 i bredd för mobiler, 8 i bred för desktop -->
-                <div class="col-12">Pokehelper</div>
+                <h1 class="col-12">Pokehelper</h1>
                 </div>
-                     </header>
-            <nav class="row col-12">
-                <div id="home" class="col-12 col-sm-6">Home</div>                <div id="favourites" class="col-12 col-sm-6">Favourites</div>
-                </nav>
-            <main class="row col-12">
-                <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
-                <div class="col-12" id="main">Main</div>
-                <div class="col-8" id="searchbar">  <input class="form-control" type="text" placeholder="Search" aria-label="Search"> </div>
-            <div class="container">
-                <div class="row" id="namebar">
-                    <div class="col-8" id="name">namn</div>
-                    <div class="col-4"id= "pokeID">id</div>
-                </div>
+        </header>
+        <nav class="row col-12">
+            <div id="home" class="col-12 col-sm-6">Home</div>                <div id="favourites" class="col-12 col-sm-6">Favourites</div>
+        </nav>
+        <main id="main" class="row col-8">
+            <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
+            <div class="col-12" id="searchbar">  <input class="form-control" type="text" placeholder="Search" aria-label="Search"> </div>
+                <div class="row" id="namebar"></div>
+                <div class="col-8" id="name">namn</div>
+                <div class="col-4"id= "pokeID">id</div>
                 <table class="table" id="imageTable">
                     <thead>
                         <tr>
@@ -44,8 +40,6 @@
                         </tr>
                     </tbody>
                 </table>
-    
-                </div>
                 <table class="table" id="typeTable">
                     <thead>
                         <tr>
@@ -96,13 +90,9 @@
                         </tr>
                     </tbody>
                 </table>
-                </main>
-                <footer class="row col-12">
-            <div class="row footer">
-                <!-- Kolumnerna har alltid 6 i bredd -->
-                <div class="col-12">Made by EO OEM</div>
-                </div>
-                </footer>
-        </div>
+            </main>
+            <footer class="row col-12">
+                <p class="col-12">Made by: Elin Olsson & Oskar Engström Magnusson</p>
+            </footer>
     </body>
 </html>
