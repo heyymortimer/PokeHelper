@@ -5,3 +5,4 @@
 #4 Ändringar i main, favourites +css - Oskar
 #5 små ändringar - elin
 #6 småfix - Oskar
+#7 Favoritlista implemenetrad med Vue - Oskar 
