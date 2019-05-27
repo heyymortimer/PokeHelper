@@ -6,6 +6,8 @@
             <title>Pokehelper</title>
             <!-- Boostrap CSS: Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+            <link rel="stylesheet" href="https://unpkg.com/vuetify/dist/vuetify.min.css">
             <link rel="stylesheet" type="text/css" href="style2.css">
     </head>
     <body>
@@ -23,9 +25,17 @@
                 <input id="search-edit-text" type="text" placeholder="Lookup Pokemon"/>
                 <button id="search-button" onclick="redirect()" class="btn-margin btn btn-outline-light">Go!</button>
             </div>
+            <v-text-field
+                v-model="pokeName"
+                placeholder="Bulbasaur"
+                color="secondary"
+                hint="What's the pokemon name? Digit here than press ENTER"
+                @keydown.enter="fixPoke(pokeName.toString())"
+                @click="clearField">
+            </v-text-field>
                 <div class="row col-12" id="namebar">
-                    <div class="col-6">  <b> Name</b> <p id="name"> </p> </div>
-                    <div class="col-6">  <b> Index</b> <p id="index"> </p> </div>
+                    <div class="col-6">  <b> Name</b> <p id="name"> {{ poke.name.toUpperCase() }} </p> </div>
+                    <div class="col-6">  <b> Index</b> <p id="index"> {{ poke.id }} </p> </div>
                 </div>
                 <table class="table" id="imageTable">
                     <thead>
@@ -38,8 +48,8 @@
                     <tbody>
                         <tr>
                             <th scope="row" id="imageCol"></th>
-                            <td> <img id="nImage" src="1" alt="pokemon"></td>
-                            <td> <img id="sImage" src="1" alt="pokemon"></td>
+                            <td> <v-img id="nImage" src="poke.imgNormal"></v-img></td>
+                            <td> <v-img id="sImage" src="poke.imgShiny"></v-img></td>
                         </tr>
                     </tbody>
                 </table>
@@ -54,8 +64,8 @@
                     <tbody>
                         <tr>
                             <th scope="row" id="typeValue"></th>
-                            <td  id="t1"></td>
-                            <td id="t2"></td>
+                            <td id="t1">{{ poke.types[0] }}</td>
+                            <td id="t2">{{ poke.types[1] }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -90,10 +100,9 @@
         <footer>
             <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
         </footer>
-            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
-             <script src="getpokemon.js"></script>
-             <script src="hej.js"></script>
-
+            <script src="https://unpkg.com/vue/dist/vue.js"></script>
+            <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
+            <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
+             <script src="pokesearch.js"></script>
             </body>
             </html>
