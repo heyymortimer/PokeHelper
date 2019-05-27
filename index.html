@@ -12,30 +12,34 @@
         <header class="row col-12">
                 <h1>PokéHelper</h1>
         </header>
+        <div id="app">
         <nav class="row col-12">
                 <div id="home" class="col-12 col-sm-6"> <p><a href="index.html">Home</a></p></div>
                 <div id="favourites" class="col-12 col-sm-6">  <p><a href="favourites.html">Favourites</a></p></div>
         </nav>
         <main id="main" class="row col-12 col-sm-8">
             <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
-            <div class="col-12" id="searchbar">  <input class="form-control" type="text" placeholder="Search for a Pokémon or ID" aria-label="Search"> </div>
-                <div class="row" id="namebar">
-                <div class="col-8" id="name">namn</div>
-                <div class="col-4"id= "pokeID">id</div>
+            <div id="pokedex-search" class="no-wrapped" align="center">
+                <input id="search-edit-text" type="text" placeholder="Lookup Pokemon"/>
+                <button id="search-button" onclick="redirect()" class="btn-margin btn btn-outline-light">Go!</button>
+            </div>
+                <div class="row col-12" id="namebar">
+                    <div class="col-6">  <b> Name</b> <p id="name"> </p> </div>
+                    <div class="col-6">  <b> Index</b> <p id="index"> </p> </div>
                 </div>
                 <table class="table" id="imageTable">
                     <thead>
                         <tr>
                             <th scope="col"></th>
-                            <th scope="col">Normal</th>
+                            <th scope="col" >Normal</th>
                             <th scope="col">Shiny</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row" id="imageCol"></th>
-                            <td>1</td>
-                            <td>2</td>
+                            <td> <img id="nImage" src="1" alt="pokemon"></td>
+                            <td> <img id="sImage" src="1" alt="pokemon"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -50,8 +54,8 @@
                     <tbody>
                         <tr>
                             <th scope="row" id="typeValue"></th>
-                            <td>2</td>
-                            <td>3</td>
+                            <td  id="t1"></td>
+                            <td id="t2"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -64,35 +68,32 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">HP</th>
-                            <td id="typeHP">1</td>
+                            <th scope="row">moves</th>
+                            <td id="moves"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Attack</th>
-                            <td id="typeATK">1</td>
+                            <th scope="row">ability</th>
+                            <td id="ablt"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Defense</th>
-                            <td id="typeDef">1</td>
+                            <th scope="row">base experience</th>
+                            <td id="bex"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Sp.Attack</th>
-                            <td id="SpATK">1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Sp.Defense</th>
-                            <td id="spDef">1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Speed</th>
-                            <td id="speed">1</td>
+                            <th scope="row">Base stat</th>
+                            <td id="bsst"></td>
                         </tr>
                     </tbody>
                 </table>
             </main>
+        </div>
         <footer>
-            <p>Made by: Elin Olsson & Oskar Engström Magnusson</p>
-            </footer>
-            </main>
+            <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
+        </footer>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+             <script src="getpokemon.js"></script>
+             <script src="hej.js"></script>
+
             </body>
             </html>
