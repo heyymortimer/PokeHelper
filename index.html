@@ -21,10 +21,6 @@
         </nav>
         <main id="main" class="row col-12 col-sm-8">
             <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
-            <div id="pokedex-search" class="no-wrapped" align="center">
-                <input id="search-edit-text" type="text" placeholder="Lookup Pokemon"/>
-                <button id="search-button" onclick="redirect()" class="btn-margin btn btn-outline-light">Go!</button>
-            </div>
             <v-text-field
                 v-model="pokeName"
                 placeholder="Bulbasaur"
@@ -97,11 +93,8 @@
                 </table>
             </main>
         </div>
-        <div class="row col-12" id="addbutton">
-        <div id="add">
+        <div class="row col-4" id="add">
             <button v-on:click="">Add to favourites</button>
-            <
-        </div>
         </div>
         <footer>
             <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
@@ -110,6 +103,5 @@
             <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
             <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
              <script src="pokesearch.js"></script>
-             <script src="js.js"></script>
             </body>
             </html>

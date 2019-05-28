@@ -20,7 +20,6 @@ footer {
     color: white;
     text-align: center;
     padding: 0%;
-    position:fixed;
     left: 0;
     bottom: 0;
     height:10%;
@@ -54,6 +53,11 @@ a {
 #imageTable{
 }
 #namebar{
+}
+#add{
+    margin-bottom:2%;
+    background-color:red;
+    font-size:25px;
 }
 @media screen and (max-width: 480px) {
     #main {
