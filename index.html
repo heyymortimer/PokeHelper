@@ -79,15 +79,15 @@
                     <tbody>
                         <tr>
                             <th scope="row">moves</th>
-                            <td id="moves"></td>
+                            <td id="moves">{{ poke.stats[0] }}</td>
                         </tr>
                         <tr>
                             <th scope="row">ability</th>
-                            <td id="ablt"></td>
+                            <td id="ablt">{{ poke.stats[1] }}</td>
                         </tr>
                         <tr>
                             <th scope="row">base experience</th>
-                            <td id="bex"></td>
+                            <td id="bex">{{ poke.stats[2] }}</td>
                         </tr>
                         <tr>
                             <th scope="row">Base stat</th>
@@ -97,6 +97,12 @@
                 </table>
             </main>
         </div>
+        <div class="row col-12" id="addbutton">
+        <div id="add">
+            <button v-on:click="">Add to favourites</button>
+            <
+        </div>
+        </div>
         <footer>
             <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
         </footer>
@@ -104,5 +110,6 @@
             <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
             <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
              <script src="pokesearch.js"></script>
+             <script src="js.js"></script>
             </body>
             </html>

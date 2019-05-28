@@ -38,9 +38,10 @@ new Vue({
                     vm.poke.types.push(response.types[i].type.name)
                 }
                 for(var i = 0; i < response.stats.length; i++) {
-                    vm.poke.types.push(response.stats[i].base_stat)
+                    vm.poke.stats.push(response.stats[i].base_stat)
                 }
                 vm.savePoke.push(vm.poke)
+                  console.log(response.stats.length);
             })
         }, clearField() {
             let vm = this
