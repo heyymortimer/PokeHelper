@@ -44,8 +44,9 @@
                     <tbody>
                         <tr>
                             <th scope="row" id="imageCol"></th>
-                            <td> <v-img id="nImage" src="poke.imgNormal"></v-img></td>
-                            <td> <v-img id="sImage" src="poke.imgShiny"></v-img></td>
+                            <th>    <img v-bind:src="poke.imgNormal" /> <th>
+                                <th>    <img v-bind:src="poke.imgShiny" /> <th>
+
                         </tr>
                     </tbody>
                 </table>
@@ -87,7 +88,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Base stat</th>
-                            <td id="bsst"></td>
+                            <td id="bsst">{{ poke.stats[3] }}</td>
                         </tr>
                     </tbody>
                 </table>
