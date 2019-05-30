@@ -11,3 +11,4 @@
 #10 
 #11 small fixes
 #12 images now working - Elin
+#13 bilderna, statsen, layout fixat vid tabellen - Elin 

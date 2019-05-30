@@ -1,7 +1,15 @@
+
+*{
+    overflow:hidden;
+}
+    body{
+    max-width:100%;
+}
 header {
     background-color: red;
     color: white;
     padding: 3%;
+    display:inline
 }
 h1 {
     padding-left: 10%;
@@ -11,6 +19,7 @@ nav {
     background-color: darkred;
     color: white;
     padding: 1.5%;
+    height:70px;
 }
 h2 {
     padding: 1%;
@@ -20,7 +29,6 @@ footer {
     color: white;
     text-align: center;
     padding: 0%;
-    left: 0;
     bottom: 0;
     height:10%;
     width: 100%;
@@ -46,18 +54,36 @@ a {
 #searchbar {
     margin-top: 4%;
 }
-#typeTable{
+#add{
+    font-size:20px;
+    margin-bottom:2%;
+    margin-left:70%;
+    border-radius:5px;
+    background-color: yellow;
+    box-shadow: 8px 8px;
+    padding:10px;
 }
-#statsTable{
+td{
+    font-size:15px;
 }
-#imageTable{
+th{
+    font-size:15px;
+}
+#t1,#t2,#name, #index{
+    font-size:20px;
+}
+a{
+ font-size:20px;
 }
 #namebar{
+    margin-top:2%;
+    border-top:1px solid gray;
 }
-#add{
-    margin-bottom:2%;
-    background-color:red;
+#inputfield{
     font-size:25px;
+    border:1px solid gray;
+    padding:2%;
+    background-color:hsl(60, 100%, 90%);
 }
 @media screen and (max-width: 480px) {
     #main {
@@ -71,5 +97,19 @@ a {
     }
     footer {
         font-size: small;
+    }
+    #add{
+        font-size:15px;
+        margin-bottom:2%;
+        margin-left:50%;
+        border-radius:5px;
+        background-color: yellow;
+        box-shadow: 4px 4px;
+        padding:2px;
+    }
+    #name{
+        font-size:12px;
+        background-color: yellow;
+        border:2px solid gray;
     }
 }

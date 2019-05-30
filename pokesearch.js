@@ -3,7 +3,7 @@ new Vue({
     data() {
         return {
             url: 'https://pokeapi.co/api/v2/pokemon/',
-            pokeName: 'bulbasaur',
+            pokeName: 'charmander',
             first: true,
             poke: {
                 name: '',
@@ -35,7 +35,7 @@ new Vue({
                 vm.poke.imgNormal = response.sprites.front_default
                 vm.poke.imgShiny = response.sprites.front_shiny
                 for(var i = 0; i < response.types.length; i++) {
-                    vm.poke.types.push(response.types[i].type.name)
+                    vm.poke.types.push(response.types[i].type.name.toUpperCase())
                 }
                 for(var i = 0; i < response.stats.length; i++) {
                     vm.poke.stats.push(response.stats[i].base_stat)
@@ -52,3 +52,4 @@ new Vue({
         vm.callPoke(vm.pokeName.toString())
     }
 });
+

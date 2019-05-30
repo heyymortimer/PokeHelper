@@ -22,40 +22,41 @@
         <main id="main" class="row col-12 col-sm-8">
             <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
             <v-text-field
+                id ="inputfield"
                 v-model="pokeName"
-                placeholder="Bulbasaur"
+                placeholder="NAME or INDEX"
                 color="secondary"
-                hint="What's the pokemon name? Digit here than press ENTER"
+                hint="Write a pokemon name or index and press enter!"
                 @keydown.enter="fixPoke(pokeName.toString())"
                 @click="clearField">
             </v-text-field>
                 <div class="row col-12" id="namebar">
-                    <div class="col-6">  <b> Name</b> <p id="name"> {{ poke.name.toUpperCase() }} </p> </div>
-                    <div class="col-6">  <b> Index</b> <p id="index"> {{ poke.id }} </p> </div>
+                    <div class="col-6">  <b> NAME</b> <p id="name"> {{ poke.name.toUpperCase() }}</p> </div>
+                    <div class="col-6">  <b> INDEX</b> <p id="index"> {{ poke.id }} </p> </div>
                 </div>
                 <table class="table" id="imageTable">
                     <thead>
                         <tr>
                             <th scope="col"></th>
-                            <th scope="col" >Normal</th>
-                            <th scope="col">Shiny</th>
+                            <th scope="col" >NORMAL</th>
+                            <th scope="col"></th>
+                            <th scope="col">SHINY</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row" id="imageCol"></th>
-                            <th>    <img v-bind:src="poke.imgNormal" /> <th>
-                                <th>    <img v-bind:src="poke.imgShiny" /> <th>
-
+                            <th>   <v-img style= max-width="300" min-height="100" :src="poke.imgNormal"></v-img> <th>
+                                <th>   <v-img style= max-width="300" min-height="100" :src="poke.imgShiny"></v-img> <th>
                         </tr>
                     </tbody>
                 </table>
                 <table class="table" id="typeTable">
                     <thead>
                         <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Type 1</th>
-                            <th scope="col">Type 2</th>
+                            <th scope="col">TYPE</th>
+                            <th scope="col">TYPE 1</th>
+                            <th scope="col">TYPE 2</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -69,33 +70,40 @@
                 <table class="table" id="statsTable">
                     <thead>
                         <tr>
-                            <th scope="col">Base stats</th>
-                            <th scope="col">Value</th>
+                            <th scope="col">STATS</th>
+                            <th scope="col">VALUE</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">moves</th>
-                            <td id="moves">{{ poke.stats[0] }}</td>
+                            <th scope="row">Speed</th>
+                            <td>{{ poke.stats[0] }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">ability</th>
-                            <td id="ablt">{{ poke.stats[1] }}</td>
+                            <th scope="row">Special Defence</th>
+                            <td>{{ poke.stats[1] }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">base experience</th>
-                            <td id="bex">{{ poke.stats[2] }}</td>
+                            <th scope="row">Special Attack</th>
+                            <td>{{ poke.stats[2] }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">Base stat</th>
-                            <td id="bsst">{{ poke.stats[3] }}</td>
+                            <th scope="row">Defence</th>
+                            <td>{{ poke.stats[3] }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Attack</th>
+                            <td>{{ poke.stats[4] }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HP</th>
+                            <td>{{ poke.stats[5] }}</td>
                         </tr>
                     </tbody>
                 </table>
             </main>
-        </div>
-        <div class="row col-4" id="add">
-            <button v-on:click="">Add to favourites</button>
+        <div class="row -12" id="btnfav" >
+            <button id="add" v-on:click="">Add to favourites</button>
         </div>
         <footer>
             <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
