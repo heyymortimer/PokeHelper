@@ -47,7 +47,7 @@
                         <tr>
                             <th scope="row" id="imageCol"></th>
                             <th>   <v-img style= max-width="300" min-height="100" :src="poke.imgNormal"></v-img> <th>
-                                <th>   <v-img style= max-width="300" min-height="100" :src="poke.imgShiny"></v-img> <th>
+                            <th>   <v-img style= max-width="300" min-height="100" :src="poke.imgShiny"></v-img> <th>
                         </tr>
                     </tbody>
                 </table>
@@ -102,15 +102,16 @@
                     </tbody>
                 </table>
             </main>
-        <div class="row -12" id="btnfav" >
-            <button id="add" v-on:click="">Add to favourites</button>
+            <div class="row -12" id="btnfav">
+                <button id="add" v-on:click="addToFavourites">Add to favourites</button>
+            </div>
+            <footer>
+                <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
+            </footer>
         </div>
-        <footer>
-            <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>
-        </footer>
-            <script src="https://unpkg.com/vue/dist/vue.js"></script>
-            <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
-            <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
-             <script src="pokesearch.js"></script>
-            </body>
-            </html>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
+        <script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
+        <script src="pokesearch.js"></script>
+    </body>
+</html>

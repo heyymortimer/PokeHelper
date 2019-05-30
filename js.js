@@ -17,12 +17,13 @@ Vue.component('pokemon',  {
         return {}
     }
 });
+
 Vue.component('pokelist', {
     template: `
     <div>
         <input type="text" placeholder="Add favourite pokemon" class="form-control" v-on:keyup.enter="addItem" :value="newItem">
         <ul class="list-group">
-            <pokemon v-for="pokemon in favourites" :key="pokemon.id" :item="pokemon" :deleteItem="deleteItem"></pokemon>
+            <pokemon v-for="pokemon in favourites" :key="pokemon.id" :item="pokemon" @updateList="addItem" :deleteItem="deleteItem"></pokemon>
         </ul>
     </div>`,
     computed: {

@@ -3,8 +3,9 @@ new Vue({
     data() {
         return {
             url: 'https://pokeapi.co/api/v2/pokemon/',
-            pokeName: 'charmander',
+            pokeName: '',
             first: true,
+            pokeList: [],
             poke: {
                 name: '',
                 id: '',
@@ -12,7 +13,7 @@ new Vue({
                 imgShiny: '',
                 types: [],
                 stats: []
-            }
+            },
       }
     }, 
     methods: {
@@ -46,10 +47,18 @@ new Vue({
         }, clearField() {
             let vm = this
             vm.pokeName = ''
+        }, 
+        addToFavourites() {
+            let vm = this
+            vm.pokeList.push({
+                name: vm.poke.name.toUpperCase(),
+                id: vm.poke.id
+            })
+            console.log(vm.pokeList);
+            vm.$emit('updateList', vm.pokeList)
         }
     }, created() {
         let vm = this
         vm.callPoke(vm.pokeName.toString())
     }
 });
-
