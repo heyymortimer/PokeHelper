@@ -19,7 +19,10 @@ nav {
     background-color: darkred;
     color: white;
     padding: 1.5%;
-    height:70px;
+    font-size: x-large;
+}
+#home {
+    border-right: 1px solid white;
 }
 h2 {
     padding: 1%;
@@ -48,8 +51,9 @@ button {
     margin: auto;
     width: 80%;
 }
-a {
-    color: white;
+#faves {
+    margin: auto;
+    width: 80%;
 }
 #searchbar {
     margin-top: 4%;
@@ -72,9 +76,6 @@ th{
 #t1,#t2,#name, #index{
     font-size:20px;
 }
-a{
- font-size:20px;
-}
 #namebar{
     margin-top:2%;
     border-top:1px solid gray;
@@ -85,15 +86,20 @@ a{
     padding:2%;
     background-color:hsl(60, 100%, 90%);
 }
+ul {
+    padding-bottom: 5%;
+}
 @media screen and (max-width: 480px) {
     #main {
         width: 100%;
     }
     #home {
         border-bottom: 1px solid white;
+        border-right: none;
     }
     #home, #favourites {
         padding-top: 3%;
+        font-size: large;
     }
     footer {
         font-size: small;
@@ -111,5 +117,8 @@ a{
         font-size:12px;
         background-color: yellow;
         border:2px solid gray;
+    }
+    #faves {
+        width: 100%;
     }
 }

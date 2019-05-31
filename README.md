@@ -1,4 +1,4 @@
-# PokeHelper
+﻿# PokeHelper
 #1 la till HTML, JS, CSS fil för grund - Elin
 #2 planering- Elin Oskar
 #3 index html för hemsida - elin
@@ -14,3 +14,4 @@
 #13 bilderna, statsen, layout fixat vid tabellen - Elin 
 #14 Tryck på kanppen sparar nu pokemon i en favoritlista, syns dock inte i listan på favoritsidan... - Oskar
 #15 favorit lista på index sidan 
+#16 dynamsik favoritlista implementerad, fungerar nu också att "switcha" mellan home och favourites + lite annat småfix - Oskar 

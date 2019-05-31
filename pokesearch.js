@@ -6,6 +6,7 @@ new Vue({
             pokeName: '',
             first: true,
             pokeList: [],
+            seen: true,
             poke: {
                 name: '',
                 id: '',
@@ -55,6 +56,12 @@ new Vue({
             )
             console.log(vm.pokeList[0]);
             vm.$emit('updateList', vm.pokeList)
+        },
+        deleteFave(index) {
+            this.$delete(this.pokeList, index)
+        },
+        homePage() {
+
         }
     }, created() {
         let vm = this
