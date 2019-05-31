@@ -16,3 +16,4 @@
 #15 favorit lista på index sidan 
 #16 dynamsik favoritlista implementerad, fungerar nu också att "switcha" mellan home och favourites + lite annat småfix - Oskar 
 #17 local storage funkar - Elin
+#19 favoritbuggen fixad - Elin

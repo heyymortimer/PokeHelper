@@ -17,7 +17,7 @@
         <div id="app">
         <nav class="row col-12">
                 <div id="home" class="col-12 col-sm-6" v-on:click="seen = true"> <p>Home</p></div>
-                <div id="favourites" class="col-12 col-sm-6" v-on:click="seen = false">  <p>Favourites</p></div>
+                <div id="favourites" class="col-12 col-sm-6" v-on:click="seen = true"> <a href="favourites.html">Favourites</a></div>
         </nav>
         <main id="main" class="row col-12 col-sm-8" v-show="seen">
             <!-- 12 i bredd för mobiler, 4 i bred för desktop -->
@@ -104,15 +104,6 @@
                 </main>
                 <div class="row -12" id="btnfav" v-show="seen">
                     <button id="add" v-on:click="addToFavourites">Add to favourites</button>
-                </div>
-                <div id="faves" class="col-12" v-show="!seen">
-                    <h2>Favourites</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item" v-for="favePoke, index in pokeList">
-                            {{ favePoke }}
-                            <button class="btn btn-sm btn-danger" @click="deleteFave(index)">&times;</button>
-                        </li>
-                    </ul>
                 </div>
             <footer>
                 <p>Made by: Elin Olsson  Oskar Engström Magnusson</p>

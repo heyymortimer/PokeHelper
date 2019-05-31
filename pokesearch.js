@@ -60,9 +60,6 @@ new Vue({
         deleteFave(index) {
             this.$delete(this.pokeList, index)
         },
-        homePage() {
-
-        }
     }, created() {
         let vm = this
         vm.callPoke(vm.pokeName.toString())
