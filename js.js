@@ -10,7 +10,7 @@ Vue.component('pokemon',  {
         }
     },
     template: `<li class="list-group-item">
-    {{ item.title }}
+    {{ vm.poke.name }}
     <button class="btn btn-sm btn-danger" v-on:click="deleteItem(item.id)">X</button>
     </li>`,
     data() {

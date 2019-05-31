@@ -54,7 +54,7 @@ new Vue({
                 name: vm.poke.name.toUpperCase(),
                 id: vm.poke.id
             })
-            console.log(vm.pokeList);
+            console.log(vm.pokeList[0]);
             vm.$emit('updateList', vm.pokeList)
         }
     }, created() {
