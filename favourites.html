@@ -17,11 +17,11 @@
         <div id="home" class="col-12 col-sm-6"> <p><a href="index.html">Home</a></p></div>
         <div id="favourites" class="col-12 col-sm-6">  <p><a href="favourites.html">Favourites</a></p></div>
     </nav>
-    <main class="row col-12">
+    <main class="row col-12" id="main2">
         <h2 class="col-12">My favourite Pokémon</h2>
         <div class="container" id="app">
             <div id="faves" class="col-12" v-show="seen">
-                <h2>Favourites</h2>
+                <h2 id="favH">Favourites</h2>
                 <ul class="list-group">
                     <li class="list-group-item" v-for="favePoke, index in pokeList">
                         {{ favePoke }}

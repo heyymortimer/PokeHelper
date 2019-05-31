@@ -1,9 +1,8 @@
 
-*{
-    overflow:hidden;
-}
-    body{
+body{
+        
     max-width:100%;
+    overflow-x:hidden;
 }
 header {
     background-color: red;
@@ -54,6 +53,8 @@ button {
 #faves {
     margin: auto;
     width: 80%;
+    min-height: calc(70vh - 20px);
+
 }
 #searchbar {
     margin-top: 4%;
@@ -61,7 +62,7 @@ button {
 #add{
     font-size:20px;
     margin-bottom:2%;
-    margin-left:70%;
+    margin-left:60%;
     border-radius:5px;
     background-color: yellow;
     box-shadow: 8px 8px;
@@ -90,6 +91,10 @@ ul {
     padding-bottom: 5%;
 }
 @media screen and (max-width: 480px) {
+    body{
+        overflow-x:hidden;
+        overflow-y:scroll;
+    }
     #main {
         width: 100%;
     }
@@ -102,13 +107,15 @@ ul {
         font-size: large;
     }
     footer {
+        margin-bottom: -5px;
         font-size: small;
     }
     #add{
         font-size:15px;
         margin-bottom:2%;
-        margin-left:50%;
+        margin-left:60%;
         border-radius:5px;
+        height:40px;
         background-color: yellow;
         box-shadow: 4px 4px;
         padding:2px;
