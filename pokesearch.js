@@ -50,10 +50,9 @@ new Vue({
         }, 
         addToFavourites() {
             let vm = this
-            vm.pokeList.push({
-                name: vm.poke.name.toUpperCase(),
-                id: vm.poke.id
-            })
+            vm.pokeList.push(
+                vm.poke.name.toUpperCase()
+            )
             console.log(vm.pokeList[0]);
             vm.$emit('updateList', vm.pokeList)
         }
