@@ -66,5 +66,17 @@ new Vue({
     }, created() {
         let vm = this
         vm.callPoke(vm.pokeName.toString())
-    }
+    },
+        watch: {
+        pokeList: {
+        handler() {
+        console.log('App mounted22!');
+        localStorage.setItem('poke', JSON.stringify(this.pokeList));
+        }
+        }
+        },
+        mounted() {
+        console.log('App mounted!');
+        if (localStorage.getItem('poke')) this.pokeList = JSON.parse(localStorage.getItem('poke'));
+        }
 });
