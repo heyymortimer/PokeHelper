@@ -1,6 +1,4 @@
-
 body{
-        
     max-width:100%;
     overflow-x:hidden;
 }
@@ -12,6 +10,10 @@ header {
 }
 h1 {
     padding-left: 10%;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
 nav {
     text-align: center;
@@ -54,7 +56,6 @@ button {
     margin: auto;
     width: 80%;
     min-height: calc(70vh - 20px);
-
 }
 #searchbar {
     margin-top: 4%;
@@ -87,8 +88,9 @@ th{
     padding:2%;
     background-color:hsl(60, 100%, 90%);
 }
-ul {
-    padding-bottom: 5%;
+h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 @media screen and (max-width: 480px) {
     body{
@@ -104,6 +106,7 @@ ul {
     }
     #home, #favourites {
         padding-top: 3%;
+        padding-bottom: 3%;
         font-size: large;
     }
     footer {

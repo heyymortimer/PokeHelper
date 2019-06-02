@@ -7,21 +7,19 @@
     <!-- Boostrap CSS: Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style2.css" type="text/css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="row col-12">
         <h1>PokéHelper</h1>
     </header>
     <nav class="row col-12">
-        <div id="home" class="col-12 col-sm-6"> <p><a href="index.html">Home</a></p></div>
-        <div id="favourites" class="col-12 col-sm-6">  <p><a href="favourites.html">Favourites</a></p></div>
+        <div id="home" class="col-12 col-sm-6"><a href="index.html">Home</a></div>
+        <div id="favourites" class="col-12 col-sm-6"><a href="favourites.html">Favourites</a></div>
     </nav>
-    <main class="row col-12" id="main2">
-        <h2 class="col-12">My favourite Pokémon</h2>
+    <main class="row col-12" id="main">
+        <h2 class="col-12">My favourite Pokémon:</h2>
         <div class="container" id="app">
-            <div id="faves" class="col-12" v-show="seen">
-                <h2 id="favH">Favourites</h2>
+            <div id="faves" class="col-12">
                 <ul class="list-group">
                     <li class="list-group-item" v-for="favePoke, index in pokeList">
                         {{ favePoke }}
@@ -29,8 +27,8 @@
                     </li>
                 </ul>
             </div>
-              </div>
-            </main>
+        </div>
+    </main>
         <footer>
             <p>Made by: Elin Olsson & Oskar Engström Magnusson</p>
         </footer>

@@ -1,4 +1,4 @@
-# PokeHelper
+﻿# PokeHelper
 #1 la till HTML, JS, CSS fil för grund - Elin
 #2 planering- Elin Oskar
 #3 index html för hemsida - elin
@@ -17,3 +17,4 @@
 #16 dynamsik favoritlista implementerad, fungerar nu också att "switcha" mellan home och favourites + lite annat småfix - Oskar 
 #17 local storage funkar - Elin
 #19 favoritbuggen fixad - Elin
+#20 Man får nu en alert när man lägger till en pokemon i favoritlistan + lite andra små ändringar - Oskar

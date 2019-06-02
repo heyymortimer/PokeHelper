@@ -43,19 +43,18 @@ new Vue({
                     vm.poke.stats.push(response.stats[i].base_stat)
                 }
                 vm.savePoke.push(vm.poke)
-                  console.log(response.stats.length);
             })
         }, clearField() {
             let vm = this
             vm.pokeName = ''
         }, 
-        addToFavourites() {
+        addToFavourites(message) {
             let vm = this
             vm.pokeList.push(
                 vm.poke.name.toUpperCase()
             )
-            console.log(vm.pokeList[0]);
-            vm.$emit('updateList', vm.pokeList)
+            console.log(vm.pokeList);
+            alert(message)
         },
         deleteFave(index) {
             this.$delete(this.pokeList, index)
