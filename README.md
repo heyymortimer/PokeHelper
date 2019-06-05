@@ -18,4 +18,5 @@
 #17 local storage funkar - Elin
 #19 favoritbuggen fixad - Elin
 #20 Man får nu en alert när man lägger till en pokemon i favoritlistan + lite andra små ändringar - Oskar
-"21 Jämförelsen och presentationen med skickat till projektet på git - Elin
+#21 Jämförelsen och presentationen med skickat till projektet på git - Elin
+#22 rensade filer som vi inte använder , klar för inläning- Elin 
